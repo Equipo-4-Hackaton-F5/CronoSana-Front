@@ -5,10 +5,9 @@ import MedicationList from "../components/MedicationList";
 const HomePage = () => {
   return (
     <div>
-      {/* Aquí Navbar */}
       <main className="main-container">
         <h1>Bienvenida a CronoSana</h1>
-        <h2>Tu medicación para hoy</h2>
+        <h2 className="title">Tu medicación para hoy</h2>
         <MedicationList />
         <AddMedicationButton />
       </main>
