@@ -1,26 +1,22 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
-import AddPage from './pages/AddPage';
 import './App.css'
 
 
 
 function App() {
-
-
+  
   return (
-    <>
-      <BrowserRouter>
-      {/* Aquí podéis poner un Navbar que se vea en todas las páginas */}
+    <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/add" element={<AddPage />} />
+        <Route path="/add" element={<div>Formulario Añadir Medicamento (próximamente)</div>} />
       </Routes>
-    </BrowserRouter>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
