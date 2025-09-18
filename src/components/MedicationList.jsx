@@ -38,7 +38,7 @@ const MedicationList = () => {
         <MedicationCard
           key={medication.id}
           medication={medication}
-          MarkAsTaken={handleMarkAsTaken}
+          markAsTaken={handleMarkAsTaken}
         />
       ))}
     </div>
