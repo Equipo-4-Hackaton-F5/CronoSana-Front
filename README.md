@@ -115,9 +115,9 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 Aquí puedes ver la interfaz en versión Desktop y Mobile:
 
 ### Desktop
-![Página principal - Vista Desktop](./src/assets/img/readme_images/Desktop_homePage.png)
-![Página añadir medicamento - Vista Desktop](./src/assets/img/readme_images/Desktop_addPage.png)
+![Página principal - Vista Desktop](./src/assets/img/readme_images/app_desktop_homePage.png)
+![Página añadir medicamento - Vista Desktop](./src/assets/img/readme_images/app_desktop_addPage.png)
 
 ### Mobile
-![Página principal - Vista Mobile](./src/assets/img/readme_images/Mobile_homePage.png)
-![Página añadir medicamento - Vista Mobile](./src/assets/img/readme_images/Mobile_addPage.png)
+![Página principal - Vista Mobile](./src/assets/img/readme_images/app_mobile_homePage.png)
+![Página añadir medicamento - Vista Mobile](./src/assets/img/readme_images/app_mobile_addPage.png)
