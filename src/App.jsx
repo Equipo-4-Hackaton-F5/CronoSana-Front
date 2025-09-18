@@ -4,7 +4,7 @@ import Form from "./components/FormMedi/Form";
 function App() {
   return (
     <div className="appContainer">
-      <Form />
+
     </div>
   );
 
