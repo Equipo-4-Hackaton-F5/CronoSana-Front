@@ -7,8 +7,7 @@ const AddMedicationButton = () => {
     return (
         <div style={styles.container}>
             <button style={styles.button} onClick={() => navigate('/add')}>
-                <span style={styles.plus}>➕</span>
-                <span style={styles.text}>Añadir Medicamento</span>
+                <span style={styles.text}> + Añadir Medicamento</span>
             </button>
         </div>
     );
@@ -27,12 +26,12 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         width: '180px',
-        height: '180px',
+        height: '50px',
         backgroundColor: '#00D7D3',
-        color: '#fff',
+        color: '#0D1846',
         border: 'none',
         borderRadius: '16px',
-        boxShadow: '0 4px 12px rgba(0,0,0,.25)',
+        boxShadow: '0 4px 12px #0D1846',
         cursor: 'pointer',
         fontSize: '1rem',
         gap: '8px',

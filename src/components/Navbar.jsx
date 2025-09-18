@@ -12,13 +12,13 @@ const Navbar = () => {
                 boxSizing: 'border-box',
                 display: 'flex',
                 alignItems: 'center',
-                padding: '1rem',
+                padding: '0.2rem',
                 backgroundColor: '#0047A8',
                 color: 'white',
                 zIndex: 1000,
             }}
         >
-            <img src={logo} alt="CronoSana" style={{ height: '40px', marginRight: '10px' }} />
+            <img src={logo} alt="CronoSana" style={{ height: '40px', marginRight: '20px' }} />
             <h2 style={{ margin: 0 }}>CronoSana</h2>
         </nav>
 
