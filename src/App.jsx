@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import './App.css'
+import AddPage from './pages/AddPage';
 
 
 
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/add" element={<div>Formulario Añadir Medicamento (próximamente)</div>} />
+        <Route path="/add" element={<AddPage />} />
       </Routes>
       <Footer />
     </Router>
