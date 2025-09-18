@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MedicationCard from './MedicationCard';
 import '../styles/MedicationCard.css';
+
 // import { getAllMedications, updateMedicationStatus } from '../../services/medicationService'; // Descomentar al integrar la API
 
 // DATOS FALSOS de prueba
@@ -33,7 +34,6 @@ const MedicationList = () => {
 
   return (
     <div className="medication-list-container">
-      <h2>Tu medicación para hoy</h2>
       {medications.map(medication => (
         <MedicationCard
           key={medication.id}

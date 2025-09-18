@@ -67,7 +67,7 @@ h2 {
 
 /* Pendiente (Azul Oscuro) */
 .medication-card.pendiente .status-bar { background-color: #0D1846; }
-.medication-card.pendiente .check-button { background-color: #0D1846; }
+.medication-card.pendiente .check-button { background-color: #e3dfdf; }
 
 /* Tomado (Turquesa) */
 .medication-card.tomado .status-bar { background-color: #00D7D3; }
@@ -78,5 +78,5 @@ h2 {
 /* Alerta (Rojo) */
 .medication-card.alerta { background-color: #FAE7B9; /* Amarillo pálido */ }
 .medication-card.alerta .status-bar { background-color: #E23233; /* Rojo */ }
-.medication-card.alerta .check-button { background-color: #0D1846; } /* El botón sigue azul para la acción */
-.medication-card.alerta .hora { color: #E23233; }
+.medication-card.alerta .check-button { background-color: #e3dfdf; } /* El botón sigue azul para la acción */
+.medication-card.alerta .time { color: #E23233; }

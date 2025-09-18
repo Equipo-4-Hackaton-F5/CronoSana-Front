@@ -18,10 +18,10 @@ const MedicationCard = ({ medication, markAsTaken }) => {
     medicationTime.setHours(hours, minutes, 0, 0);
 
     if (now > medicationTime) {
-      return 'Atrasado'; // Rojo en negrita (la hora ya pasó)
+      return 'alerta'; // amarillo y Rojo en negrita (la hora ya pasó)
     }
 
-    return 'Pendiente'; // Rojo pendiente
+    return 'pendiente'; // Rojo pendiente
   };
 
   const statusClass = getStatusClass();
