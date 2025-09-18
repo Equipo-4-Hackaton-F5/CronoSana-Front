@@ -57,9 +57,9 @@ export default function Form() {
             </div>
 
             <div className="field">
-                <label className="label" htmlFor="descripcion">Descripción*</label>
+                <label className="label" htmlFor="Frecuencia">Frecuencia*</label>
                 <input
-                    id="descripcion"
+                    id="Frecuencia"
                     className="input"
                     type="text"
                     placeholder="Antes de comer, 1 comprimido..."
@@ -70,7 +70,7 @@ export default function Form() {
             </div>
 
             <div className="field">
-                <label className="label" htmlFor="hora">Hora programada*</label>
+                <label className="label" htmlFor="hora">Hora de inicio de toma*</label>
                 <input
                     id="hora"
                     className="input"

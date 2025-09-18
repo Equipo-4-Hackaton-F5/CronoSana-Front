@@ -1,7 +1,7 @@
 .appContainer {
-  min-height: 100vh;             /* ocupa toda la altura */
+  min-height: 100vh;             
   display: flex;
-  align-items: center;           /* centra verticalmente */
-  justify-content: center;       /* centra horizontalmente */
-  background: #f4f7fb;           /* opcional, un fondo suave */
+  align-items: center;           
+  justify-content: center;       
+  background: #f4f7fb;           
 }
