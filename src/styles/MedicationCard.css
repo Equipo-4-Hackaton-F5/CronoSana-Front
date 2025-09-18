@@ -1,0 +1,82 @@
+/* Estructura general de la tarjeta */
+.medication-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid #0047A8;
+}
+
+.status-bar {
+  width: 10px;
+  height: 80px; /* Ajusta la altura según necesites */
+  border-radius: 1px;
+  margin-right: 1rem;
+}
+
+.info-container {
+  flex-grow: 1;
+}
+
+.info-container h3 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+}
+
+.info-container p {
+  margin: 0;
+  color: #666;
+}
+
+.info-container .hora {
+  font-weight: bold;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.check-button:disabled {
+  cursor: not-allowed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0D1846;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0D1846;
+}
+
+
+/* --- ESTILOS DE ESTADO --- */
+
+/* Pendiente (Azul Oscuro) */
+.medication-card.pendiente .status-bar { background-color: #0D1846; }
+.medication-card.pendiente .check-button { background-color: #0D1846; }
+
+/* Tomado (Turquesa) */
+.medication-card.tomado .status-bar { background-color: #00D7D3; }
+.medication-card.tomado .check-button { background-color: #00D7D3; }
+.medication-card.tomado h3 { text-decoration: line-through; color: #aaa; }
+
+
+/* Alerta (Rojo) */
+.medication-card.alerta { background-color: #FAE7B9; /* Amarillo pálido */ }
+.medication-card.alerta .status-bar { background-color: #E23233; /* Rojo */ }
+.medication-card.alerta .check-button { background-color: #0D1846; } /* El botón sigue azul para la acción */
+.medication-card.alerta .hora { color: #E23233; }

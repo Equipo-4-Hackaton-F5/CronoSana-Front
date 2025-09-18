@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MedicationCard from './MedicationCard';
+import '../styles/MedicationCard.css';
 // import { getAllMedications, updateMedicationStatus } from '../../services/medicationService'; // Descomentar al integrar la API
 
 // DATOS FALSOS de prueba

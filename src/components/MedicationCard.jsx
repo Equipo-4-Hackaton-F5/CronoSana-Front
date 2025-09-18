@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/MedicationCard.css';
+import '../styles/MedicationCard.css';
 
 // Recibe como props los datos de un medicamento y la función para marcarlo como tomado
 const MedicationCard = ({ medication, markAsTaken }) => {
