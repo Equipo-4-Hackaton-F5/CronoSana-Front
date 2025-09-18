@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/MedicationCard.css';
+import iconClock from '../assets/img/icon_clock.png';
+import iconAlert from '../assets/img/icon_alert.png';
 
 // Recibe como props los datos de un medicamento y la función para marcarlo como tomado
 const MedicationCard = ({ medication, markAsTaken }) => {
@@ -8,7 +10,7 @@ const MedicationCard = ({ medication, markAsTaken }) => {
   // Lógica para el estilo de la tarjeta
   const getStatusClass = () => {
     if (isTaken) {
-      return 'tomado'; // Verde/Turquesa
+      return 'tomado'; 
     }
 
     // Comparamos la hora actual con la hora de la toma
