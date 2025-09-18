@@ -14,7 +14,7 @@ const Navbar = () => {
                 alignItems: 'center',
                 padding: '0.2rem',
                 backgroundColor: '#0047A8',
-                color: 'white',
+                color: '#ffff',
                 zIndex: 1000,
             }}
         >
