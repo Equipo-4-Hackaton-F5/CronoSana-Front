@@ -1,3 +1,6 @@
+import axios from "axios";
+const URL_API = "http://localhost:5174/";
+
 let medicines = [];
 let doseLogs = [];
 
