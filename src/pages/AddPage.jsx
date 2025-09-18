@@ -1,4 +1,7 @@
 import React from "react";
+import Form from "../components/FormMedi/Form.jsx";
+import "../components/FormMedi/Form.css"
+
 
 const AddPage = () => {
   return (

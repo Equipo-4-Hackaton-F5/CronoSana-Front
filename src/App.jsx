@@ -1,14 +1,25 @@
-import "./App.css";
-import Form from "./components/FormMedi/Form";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import './App.css'
+import AddPage from './pages/AddPage';
+
+
 
 function App() {
-  return (
-    <div className="appContainer">
-
-    </div>
-  );
-
   
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/add" element={<AddPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
