@@ -13,7 +13,7 @@ const medicamentos = [
 const Historial = () => {
     return (
         <div style={styles.container}>
-            <h3 style={styles.titulo}>Historial de medicamentos</h3>
+            <h2 style={styles.titulo}>Historial de medicamentos</h2>
             <ul style={styles.lista}>
                 {medicamentos.map((med, idx) => (
                     <li key={idx} style={styles.item}>
@@ -32,10 +32,13 @@ const styles = {
         maxWidth: '600px',
         margin: '0 auto',
     },
+
+    
     titulo: {
         textAlign: 'center',
         marginBottom: '1.5rem',
-        color: '#0047A8',
+        color: '#0D1846',
+        fontsize: '1.5rem' ,
     },
     lista: {
         listStyle: 'none',
@@ -48,6 +51,7 @@ const styles = {
         padding: '0.75rem 1rem',
         marginBottom: '0.5rem',
         backgroundColor: '#f8f9fa',
+        color:'#0D1846' ,
         borderRadius: '8px',
         boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
     },
