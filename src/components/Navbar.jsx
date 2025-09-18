@@ -1,14 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const goHome = () => navigate('/');
+
     return (
         <nav
             style={{
-                position: 'fixed',      
+                position: 'fixed',
                 top: 0,
                 left: 0,
-                width: '100vw',         
+                width: '100vw',
                 boxSizing: 'border-box',
                 display: 'flex',
                 alignItems: 'center',
@@ -19,7 +24,12 @@ const Navbar = () => {
             }}
         >
             <img src={logo} alt="CronoSana" style={{ height: '40px', marginRight: '20px' }} />
-            <h2 style={{ margin: 0 }}>CronoSana</h2>
+            <h2
+                onClick={goHome}
+                style={{ margin: 0, cursor: 'pointer' }}
+            >
+                CronoSana
+            </h2>
         </nav>
 
     );
