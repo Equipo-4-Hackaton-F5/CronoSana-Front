@@ -11,7 +11,7 @@ const Footer = () => {
             </footer>
 
             {/* espaciador para que el contenido no quede debajo del footer fijo */}
-            <adiv style={{ height: '60px' }} />
+            <div style={{ height: '60px' }} />
         </>
     );
 };
