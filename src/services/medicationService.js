@@ -1,23 +1,3 @@
-let medicines = [];
-let doseLogs = [];
-
-// IDs generator
-let nextId = 1;
-function generateId() {
-  return (nextId++).toString();
-}
-
-// Validation for medicines
-function isValidMedicine(med) {
-  return med && typeof med.name === 'string' && med.name.trim() !== '';
-}
-
-// Validation for doseLogs
-function isValidDoseLog(log) {
-  return log && log.medicineId && typeof log.dose === 'number';
-}
-
-
 // GET - Get all medicines
 export function getAllMedicines() {
   return medicines;
@@ -28,12 +8,29 @@ export function getMedicine(id) {
   return medicines.find(med => med.id === id) || null;
 }
 
-// POST - Create a medicine
-export function createMedicine(medicine) {
-  if (!isValidMedicine(medicine)) throw new Error("Medication not found 💊");
-  const newMedicine = { id: generateId(), ...medicine };
-  medicines.push(newMedicine);
-  return newMedicine;
+// POST - Create a new medicine
+export const medicineService = {
+  async createMedicine(testBase) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/medicines`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(testBase)
+      });
+
+      if (!response.ok) {
+        throw new Error(`Medicine not found status: ${response.status}`);
+      }
+
+      const createdMedicine = await response.json();
+      return createdMedicine;
+    } catch (error) {
+      console.error('Medicine not found', error);
+      throw new Error('Medicine not found');
+    }
+  }
 }
 
 // UPDATE - Update a medicine by id
